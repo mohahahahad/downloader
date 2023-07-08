@@ -25,6 +25,7 @@ function makeResourceDownloadable(resource)
     fileClose(metaForDownload)
     
     local newMeta = fileCreate(':' .. newName .. '/meta.xml')
+    print(#newMetaData)
     fileWrite(newMeta, newMetaData:sub(1, #newMetaData-10) .. '\n<file src="metad.xml"/>\n</meta>')
     fileClose(newMeta)
 
