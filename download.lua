@@ -26,7 +26,7 @@ function makeResourceDownloadable(resource)
     
     local newMeta = fileCreate(':' .. newName .. '/meta.xml')
     print(#newMetaData)
-    fileWrite(newMeta, newMetaData:sub(1, #newMetaData-10) .. '\n<file src="metad.xml"/>\n</meta>')
+    fileWrite(newMeta, newMetaData:sub(1, #newMetaData-7) .. '\n<file src="metad.xml"/>\n</meta>')
     fileClose(newMeta)
 
     -- foreach all default files and scripts and map and copy them to new resource
