@@ -34,7 +34,7 @@ function makeResourceDownloadable(resource)
     local childs = xmlNodeGetChildren(xml)
     for k,v in pairs(childs) do
         local name = xmlNodeGetName(v)
-        if name == 'script' or name == 'map' or name == 'file' then
+        if name == 'script' or name == 'map' or name == 'file' or name == 'config' then
             local src = xmlNodeGetAttribute(v, 'src')
             local file = fileOpen(':' .. resourceName .. '/' .. src)
             local newFile = fileCreate(':' .. newName .. '/' .. src)
