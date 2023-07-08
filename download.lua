@@ -10,21 +10,21 @@ function makeResourceDownloadable(resource)
     end
     local newResource = createResource(newName, '[download]')
     
-    local meta = fileOpen(':' .. name .. '/meta.xml')
-    local newMeta = xmlCreateFile(':' .. newName .. '/meta.xml', 'meta')
     local childs = xmlNodeGetChildren(meta)
-
+    
     -- rewrite all childs
+    local meta = fileOpen(':' .. name .. '/meta.xml')
     local metaData = fileRead(meta, fileGetSize(meta))
     fileClose(meta)
-
+    
     -- Replace all <script with <file
     local newMetaData = metaData:gsub('<script', '<file isScript="true"')
-
+    
     local metaForDownload = fileCreate(':' .. newName .. '/metad.xml')
     fileWrite(metaForDownload, metaData)
     fileClose(metaForDownload)
-
+    
+    local newMeta = fileCreate(':' .. newName .. '/meta.xml')
     fileWrite(newMeta, newMetaData)
     fileClose(newMeta)
 
