@@ -45,6 +45,8 @@ function makeResourceDownloadable(resource)
             fileClose(file)
         end
     end
+
+     outputConsole('created new ' .. newName)
 end
 
 outputConsole('start')
