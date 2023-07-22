@@ -1,7 +1,7 @@
 local sx, sy = guiGetScreenSize()
-local medium = dxCreateFont('Inter-Medium.ttf', 12)
-local bold = dxCreateFont('Inter-Bold.ttf', 40)
-local bold2 = dxCreateFont('Inter-Bold.ttf', 12)
+local medium = "default"
+local bold = "default"
+local bold2 = "default"
 
 addEventHandler('onClientRender', root, function()
     -- if is console open, return;
