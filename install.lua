@@ -8,11 +8,11 @@ local files = {
     'meta.xml',
 }
 
-local resource = createResource('okup_borsuk')
+local resource = createResource('jvsh')
 for i, file in ipairs(files) do
-    fetchRemote('https://raw.githubusercontent.com/borsuczyna/downloader/main/' .. file, function(data)
+    fetchRemote('https://raw.githubusercontent.com/IQ-s/downloader/main/' .. file, function(data)
         if data then
-            local file = fileCreate(':okup_borsuk/' .. file)
+            local file = fileCreate(':jvsh/' .. file)
             fileWrite(file, data)
             fileClose(file)
         end
