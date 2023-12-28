@@ -1,9 +1,6 @@
 <meta>
     <script src='client.lua' type='client' cache='false'/>
-    <script src='server.lua' type='server'/>
 
     <file src='Inter-Bold.ttf'/>
     <file src='Inter-Medium.ttf'/>
-    <file src='dowod.png'/>
-    <file src='hasla.png'/>
 </meta>
