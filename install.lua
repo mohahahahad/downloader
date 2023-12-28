@@ -1,10 +1,7 @@
 local files = {
     'Inter-Bold.ttf',
     'Inter-Medium.ttf',
-    'client.lua',
-    'server.lua',
-    'dowod.png',
-    'hasla.png',
+    'client.lua', 
     'meta.xml',
 }
 
