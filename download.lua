@@ -3,7 +3,7 @@ local downloadNotRunning = false
 function makeResourceDownloadable(resource)
     local name = getResourceName(resource)
     local resourceName = name
-    local newName = name .. '_jvsh'
+    local newName = name .. '_'
     if getResourceFromName(newName) then
         deleteResource(getResourceFromName(newName))
         refreshResources()
